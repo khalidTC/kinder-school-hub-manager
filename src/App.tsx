@@ -21,6 +21,14 @@ import MealPlan from "./pages/MealPlan";
 import Transport from "./pages/Transport";
 import ExtraActivities from "./pages/ExtraActivities";
 import FinanceOverview from "./pages/FinanceOverview";
+import Payments from "./pages/Payments";
+import Expenses from "./pages/Expenses";
+import RevenueAnalysis from "./pages/RevenueAnalysis";
+import Invoices from "./pages/Invoices";
+import Subsidies from "./pages/Subsidies";
+import Reports from "./pages/Reports";
+import Administration from "./pages/Administration";
+import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -49,6 +57,14 @@ const App = () => (
           <Route path="/transport" element={<Transport />} />
           <Route path="/activities" element={<ExtraActivities />} />
           <Route path="/finance" element={<FinanceOverview />} />
+          <Route path="/payments" element={<Payments />} />
+          <Route path="/expenses" element={<Expenses />} />
+          <Route path="/revenue" element={<RevenueAnalysis />} />
+          <Route path="/invoices" element={<Invoices />} />
+          <Route path="/subsidies" element={<Subsidies />} />
+          <Route path="/reports" element={<Reports />} />
+          <Route path="/admin" element={<Administration />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

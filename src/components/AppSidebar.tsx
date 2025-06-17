@@ -12,7 +12,8 @@ import {
   CalendarCheck,
   FileText,
   DollarSign,
-  LogOut
+  LogOut,
+  Download
 } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
@@ -76,22 +77,14 @@ const sidebarItems = [
     group: "Reports",
     icon: BarChart,
     items: [
-      { title: "Daily Reports", url: "/reports/daily", icon: BarChart },
-      { title: "Weekly / Monthly Summary", url: "/reports/summary", icon: BarChart },
-      { title: "Attendance", url: "/reports/attendance", icon: CalendarCheck },
-      { title: "Child Development", url: "/reports/development", icon: Users },
-      { title: "Financial", url: "/reports/financial", icon: CreditCard }
+      { title: "All Reports", url: "/reports", icon: BarChart }
     ]
   },
   {
     group: "Administration",
     icon: Settings,
     items: [
-      { title: "Staff Management", url: "/staff", icon: Users },
-      { title: "Calendar / Events", url: "/events", icon: Calendar },
-      { title: "Settings", url: "/settings", icon: Settings },
-      { title: "Communication", url: "/communication", icon: Activity },
-      { title: "Parent Access Settings", url: "/parent-access", icon: Settings }
+      { title: "Admin Panel", url: "/admin", icon: Settings }
     ]
   },
   {
